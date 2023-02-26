@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="format.css" type="text/css">
+    <title> Oops... </title>
+</head>
+<body>
+<img src="E:/WL/HTechML/pics/constructionu.jpg" class="imgC">
+<div class="bg">
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+  </div>
+</div>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sept 1, 2023 15:37:25").getTime();
+var countdownfunction = setInterval(function() {
+// Todays date and time
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+//Calculations
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+// Output
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+<a href="homepage.html" target="_self"><img src="E:WL/HTechML/pics/door.png" class="back"></a>
+</body>
+</html>

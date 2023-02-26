@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="format.css" type="text/css">
+    <title> Contact </title>
+</head>
+<body>
+    <section class="HELLO">
+        <h8 class="istg"> Hast du Fragen?</h8>
+        <p class="anmerkung"> Fragen, Anmerkungen, Termin? Kontaktier uns jetzt!</p>
+	</section>
+    <section class="itdontmatter">
+    <div class="container">
+		<form action="action-page.html" target="_blank" method="post">
+			<label for="vname"> Vorname </label>
+				<input type="text" id="vname" name="Vorname" placeholder="Bsp. Ana"> 
+			<label for="nname"> Nachname </label>
+				<input type="text" id="nname" name="Nachname" placeholder="Bsp. Schwarz">
+			<label for="email"> E-Mail </label>
+				<input type="text" id="email" name="E-Mail" placeholder="Bsp: ana.schwarz@domain.com">
+			<label for="dienstleisung"> Dienstleistung </label>
+				<select id="dienstleisung" name="dienstleisung">
+                <option value="select">Select</option>
+				<option value="Monitoring"> HTechMl Monitoring </option>
+				<option value="Bundle"> HTechML Bundle </option>
+				<option value="Startup">Startups </option>
+				<option value="Ads-Optimisierung"> Ads-optimisierung</option>
+				<option value="Relaunches"> Relaunches </option>
+				<option value="Andere"> Andere </option>
+				</select>
+			<label for="Nachricht"> Ihre Nachricht </label> 
+				<textarea id="Nachricht" name="Nachricht" style="height:150px" placeholder="Ihre Nachricht"> 
+				</textarea>
+			<input type="submit" value="Senden">
+			<input type="reset">
+		</form> 
+	</div>
+	<a href="homepage.html" target="_blank" class="linkig"><img src="E:WL/HTechML/pics/logoNB.png"></a>
+    </section>
+</body>
+</html>
